@@ -16,7 +16,7 @@ jobs:
 
     - name: build-example
       run: |
-        mkdir ./img
+        mkdir -p ./img
         pcbdraw breakout.kicad_pcb ./img/front.png --dpi 600
         pcbdraw breakout.kicad_pcb ./img/back.png --back --dpi 600
           
