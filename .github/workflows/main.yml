@@ -1,0 +1,24 @@
+name: Generate Image
+
+on:
+  push:
+
+jobs:
+  build:
+    container:
+      image: yaqwsx/kikit:v1.0.0
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: build-example
+      run: |
+          pcbdraw breakout.kicad_pcb front.png
+          pcbdraw breakout.kicad_pcb back.png --back
+          
+    - uses: actions/upload-artifact@v2
+      with:
+        name: PCB Images
+        path: front.png
+
