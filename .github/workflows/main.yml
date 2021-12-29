@@ -2,6 +2,8 @@ name: Generate Image
 
 on:
   push:
+    # paths:
+    #   - breakout.kicad_pcb
 
 jobs:
   build:
@@ -14,11 +16,14 @@ jobs:
 
     - name: build-example
       run: |
-          pcbdraw breakout.kicad_pcb front.png
-          pcbdraw breakout.kicad_pcb back.png --back
+        mkdir ./img
+        pcbdraw breakout.kicad_pcb front.png
+        pcbdraw breakout.kicad_pcb back.png --back
           
-    - uses: actions/upload-artifact@v2
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
       with:
-        name: PCB Images
-        path: front.png
-
+        author_name: Sille Van Landschoot
+        author_email: info@sillevl.be
+        message: 'Update generated images'
+        add: './img'
