@@ -2,8 +2,8 @@ name: Generate Image
 
 on:
   push:
-    # paths:
-    #   - breakout.kicad_pcb
+    paths:
+      - breakout.kicad_pcb
 
 jobs:
   build:
