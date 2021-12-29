@@ -1,4 +1,4 @@
-(kicad_pcb (version 20210824) (generator pcbnew)
+(kicad_pcb (version 20211014) (generator pcbnew)
 
   (general
     (thickness 1.6)
@@ -81,9 +81,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "")
+      (outputdirectory "gerber")
     )
   )
 
@@ -704,14 +704,14 @@
     )
   )
 
-  (gr_arc (start 154.4 72) (end 154.4 70) (angle 90) (layer "Edge.Cuts") (width 0.1) (tstamp 2779adcc-d91a-4973-8e5c-061711ef2b79))
+  (gr_arc (start 154.4 70) (mid 155.814214 70.585786) (end 156.4 72) (layer "Edge.Cuts") (width 0.1) (tstamp 2779adcc-d91a-4973-8e5c-061711ef2b79))
   (gr_line (start 136.4 83) (end 136.4 72) (layer "Edge.Cuts") (width 0.1) (tstamp 42cf4261-c512-427d-a4b5-29b61e7e6a79))
   (gr_line (start 154.4 85) (end 138.4 85) (layer "Edge.Cuts") (width 0.1) (tstamp 601c9d3a-8e0b-4a7c-8f4e-126bf4dabc50))
   (gr_line (start 138.4 70) (end 154.4 70) (layer "Edge.Cuts") (width 0.1) (tstamp 66dca4bc-b8d3-4c09-a5a6-65f3a4db07a0))
-  (gr_arc (start 154.4 83) (end 156.4 83) (angle 90) (layer "Edge.Cuts") (width 0.1) (tstamp 8f529a98-ec7e-4753-b41e-91fc9df909e2))
+  (gr_arc (start 156.4 83) (mid 155.814214 84.414214) (end 154.4 85) (layer "Edge.Cuts") (width 0.1) (tstamp 8f529a98-ec7e-4753-b41e-91fc9df909e2))
   (gr_line (start 156.4 72) (end 156.4 83) (layer "Edge.Cuts") (width 0.1) (tstamp 976e6dc9-3dc8-4c85-861e-b4fd5c87cd9a))
-  (gr_arc (start 138.4 83) (end 138.4 85) (angle 90) (layer "Edge.Cuts") (width 0.1) (tstamp be6d08f3-94c6-4b98-8a35-56610eed1db5))
-  (gr_arc (start 138.4 72) (end 136.4 72) (angle 90) (layer "Edge.Cuts") (width 0.1) (tstamp c9adf2d1-e9b9-4da0-a445-abf0d1fec9bf))
+  (gr_arc (start 138.4 85) (mid 136.985786 84.414214) (end 136.4 83) (layer "Edge.Cuts") (width 0.1) (tstamp be6d08f3-94c6-4b98-8a35-56610eed1db5))
+  (gr_arc (start 136.4 72) (mid 136.985786 70.585786) (end 138.4 70) (layer "Edge.Cuts") (width 0.1) (tstamp c9adf2d1-e9b9-4da0-a445-abf0d1fec9bf))
   (gr_text "V1.0 - 2021" (at 154 83.3) (layer "B.SilkS") (tstamp 02fcec24-dc59-44cf-acef-5707870a2601)
     (effects (font (size 0.7 0.7) (thickness 0.1)) (justify left mirror))
   )
