@@ -17,8 +17,8 @@ jobs:
     - name: build-example
       run: |
         mkdir ./img
-        pcbdraw breakout.kicad_pcb ./img/front.png
-        pcbdraw breakout.kicad_pcb ./img/back.png --back
+        pcbdraw breakout.kicad_pcb ./img/front.png --dpi 600
+        pcbdraw breakout.kicad_pcb ./img/back.png --back --dpi 600
           
     - name: Commit changes
       uses: EndBug/add-and-commit@v7
