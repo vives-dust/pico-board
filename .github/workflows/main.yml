@@ -1,0 +1,29 @@
+name: Generate Image
+
+on:
+  push:
+    paths:
+      - breakout.kicad_pcb
+
+jobs:
+  build:
+    container:
+      image: yaqwsx/kikit:v1.0.0
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: build-example
+      run: |
+        mkdir ./img
+        pcbdraw breakout.kicad_pcb ./img/front.png
+        pcbdraw breakout.kicad_pcb ./img/back.png --back
+          
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v7
+      with:
+        author_name: Sille Van Landschoot
+        author_email: info@sillevl.be
+        message: 'Update generated images'
+        add: './img'
